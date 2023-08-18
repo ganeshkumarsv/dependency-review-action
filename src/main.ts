@@ -50,7 +50,7 @@ async function run(): Promise<void> {
       filteredChanges
     ).filter(
       change =>
-        change.change_type === 'added' &&
+        change.change_type === 'removed' &&
         change.vulnerabilities !== undefined &&
         change.vulnerabilities.length > 0
     )
